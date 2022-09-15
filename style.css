@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background-color: #15151e;
+    display: flex;
+    align-items: center;
+}
+.main_box{
+    height: 75vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+}
+.sub_box_1{
+    height: inherit;
+    width: 40%;
+    /* background-color: aliceblue; */
+    margin-left: 120px;
+    position: relative;
+}
+.sub_box_2{
+    height: inherit;
+    width: 55%;
+    background: #4de1b1;
+    background: url("https://blog-uploads.nyc3.digitaloceanspaces.com/2020/05/man-in-black-crew-neck-t-shirt-wearing-black-headphones-3990842-768x511.jpg");
+    background-position: center;
+    background-size: cover;
+    opacity: 0.6;
+}
+
+.logo{
+    height: 90px;
+    width: 200px;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+}
+.logo > i{
+    font-size: 25px;
+    color: #7ef5cd;
+}
+.logo > h1{
+    color:  white;  
+    padding: 0 10px; 
+}
+.sub_box_3{
+    height: 54.5vh;
+    width: 100%;
+    /* background-color: yellow;  */
+    margin-top: 100px;
+}
+.sub_box_3 > h1{
+    color: #7ef5cd;
+    font-weight: 100;
+}
+.sub_box_3 > .colorChange{
+    color: white;
+}
+.sub_box_3 > p{
+    padding-top: 35px;
+    color: white;
+}
+.searchBar{
+    height: 45px;
+    width: 400px;
+    background-color: rgb(39, 39, 67);
+    border-radius: 20px;
+    margin-top: 40px;
+}
+.input{
+    height: inherit;
+    width: 250px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    text-indent: 30px;
+    background: none;
+    color: white;
+}
+.btn{
+    height: 40px;
+    width: 142px;
+    border: none; 
+    border-radius: 20px; 
+    background: #7ef5cd;
+    cursor: pointer;
+}
+.logo_box{
+    height: 45px;
+    width: 550px;
+    margin-top: 50px;
+    /* background-color:blue;   */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color:#696983;
+}
+.icon{
+    font-size: 30px;
+    color: rgb(39, 39, 67);
+}
+.dot_box{
+    height: 100px;
+    width: 200px;
+    /* background-color: yellow; */
+    position: absolute;
+    right: 20px;
+    bottom: 40px;
+}
+.dot_box_1{
+    height: 7px;
+    width: inherit;
+    margin-top: 13px;
+    /* background-color: gray; */
+    display: flex;
+    justify-content: space-evenly;
+}
+.dot{
+    height: 7px;
+    width: 7px;
+    background-color: #4de1b1;
+    border-radius: 50%;
+}
+
+@media(max-width: 767px) {
+    .container{
+        align-items: flex-start;
+    }
+   .sub_box_1{
+    margin-left: 19px;
+   }
+   .sub_box_2{
+    opacity: 1;
+   }
+   .sub_box_3{
+    margin-top: 110px;
+   }
+   .sub_box_3 > h1{
+     font-size: 23px;
+   }
+    .sub_box_3 > p{
+        font-size: 15px;
+    }
+    .searchBar{
+        width: 300px;
+    }
+    .input{
+        width: 170px;
+        text-indent: 15px;
+    }
+    .btn{
+        height: 35px;
+        width: 120px;
+        font-size: 13px;
+    }
+    .logo{
+        padding-left: 20px;
+    }
+    .logo_box{
+        width: 500px;
+    }
+    .icon{
+        margin-left:5px;
+        font-size: 20px;
+    }
+    .dot_box{
+        left: 25px;
+        bottom: 0px;
+    }
+
+}
+
+@media (max-width:480px) {
+    .container{
+        height: 100vh;
+        width: 100%;
+    }
+    .sub_box_1{
+      position: absolute;
+    }
+    .sub_box_2{
+        height: 100vh;
+        width: 100%;
+        opacity: 0.3;
+    }
+    .logo{
+        /* background-color: #4de1b1; */
+        margin-left: 150px;
+        margin-top: 50px;
+    }
+    .sub_box_3{
+        width: 400px;
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+    .sub_box_3 > h1{
+     text-align: center;
+    }
+    .sub_box_3 > p{
+        text-align: center;
+    }
+    .searchBar{
+        width: 300px;
+        height: 100px;
+        margin-left: 50px;
+       background: none;
+    }
+    .input{
+        width: inherit;
+        height: 40px;
+        text-indent: 20px;
+        background: #2b2b3c;
+    }
+    .btn{
+        height: 38px;
+        width: inherit;
+        font-size: 13px;
+        margin-top: 15px;
+    }
+    .logo_box{
+        width: 400px;
+        /* background: yellow; */
+        margin-top: 35px;
+    }
+    .dot_box{
+        display: none;
+    }
+}
+
+
+
+
+
+
